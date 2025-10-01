@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Contact - Brew & Beans</title>
+  <meta name='description' content='Get in touch with Brew & Beans. Visit us, call, or send a message.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-[Open Sans]'>
+  <!-- Navigation -->
+  <header>
+    <nav class='bg-white shadow-lg sticky top-0 z-50'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div class='flex justify-between items-center h-16'>
+          <div class='flex-shrink-0'>
+            <a href='index.html' class='text-2xl font-bold text-[#3C2415]'>Brew & Beans</a>
+          </div>
+          <div class='hidden md:block'>
+            <div class='ml-10 flex items-baseline space-x-4'>
+              <a href='index.html' class='text-gray-700 hover:text-[#8B4513] transition-all duration-300'>Home</a>
+              <a href='about.html' class='text-gray-700 hover:text-[#8B4513] transition-all duration-300'>Our Story</a>
+              <a href='#menu' class='text-gray-700 hover:text-[#8B4513] transition-all duration-300'>Menu</a>
+              <a href='contact.html' class='text-gray-700 hover:text-[#8B4513] transition-all duration-300'>Contact</a>
+            </div>
+          </div>
+          <div class='md:hidden'>
+            <button id='mobile-menu-button' class='text-[#3C2415] hover:text-[#8B4513] focus:outline-none'>☰</button>
+          </div>
+        </div>
+      </div>
+      <div id='mobile-menu' class='hidden md:hidden'>
+        <a href='index.html' class='block px-4 py-2 text-sm text-[#3C2415] hover:bg-[#f3e6d9]'>Home</a>
+        <a href='about.html' class='block px-4 py-2 text-sm text-[#3C2415] hover:bg-[#f3e6d9]'>Our Story</a>
+        <a href='#menu' class='block px-4 py-2 text-sm text-[#3C2415] hover:bg-[#f3e6d9]'>Menu</a>
+        <a href='contact.html' class='block px-4 py-2 text-sm text-[#3C2415] hover:bg-[#f3e6d9]'>Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class='py-12'>
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h1 class='font-[Montserrat] text-3xl md:text-4xl text-[#3C2415] mb-4'>Contact Us</h1>
+      <p class='text-gray-700 mb-6'>We’d love to hear from you. Reach out for questions, reservations, or feedback.</p>
+
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-8'>
+        <div class='bg-white rounded-lg p-6 shadow'>
+          <h2 class='text-xl font-semibold mb-2'>Visit Us</h2>
+          <p>123 Bean Lane, Roaster City</p>
+          <p>Mon-Sun: 7:00 AM - 6:00 PM</p>
+        </div>
+
+        <div class='bg-white rounded-lg p-6 shadow'>
+          <h2 class='text-xl font-semibold mb-2'>Send a Message</h2>
+          <form class='space-y-4'>
+            <div>
+              <label class='block text-sm text-gray-700'>Name</label>
+              <input type='text' name='name' class='w-full mt-1 p-2 border rounded' required />
+            </div>
+            <div>
+              <label class='block text-sm text-gray-700'>Email</label>
+              <input type='email' name='email' class='w-full mt-1 p-2 border rounded' required />
+            </div>
+            <div>
+              <label class='block text-sm text-gray-700'>Message</label>
+              <textarea name='message' rows='4' class='w-full mt-1 p-2 border rounded' required></textarea>
+            </div>
+            <button type='submit' class='bg-[#D2B48C] text-[#3C2415] px-4 py-2 rounded font-semibold transition-all duration-300'>Send Message</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='bg-[#3C2415] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h3 class='text-2xl font-bold mb-2 text-[#D2B48C]'>Brew & Beans</h3>
+          <p class='text-gray-300'>A cozy coffee shop offering thoughtful drinks and a welcoming space to work and unwind.</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-2'>Hours</h4>
+          <p class='text-gray-300'>Mon-Sun: 7:00 AM - 6:00 PM</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-2'>Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='index.html' class='text-gray-300 hover:text-[#D2B48C]'>Home</a></li>
+            <li><a href='about.html' class='text-gray-300 hover:text-[#D2B48C]'>Our Story</a></li>
+            <li><a href='contact.html' class='text-gray-300 hover:text-[#D2B48C]'>Contact</a></li>
+          </ul>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-2'>Social</h4>
+          <div class='flex space-x-3'>
+            <span aria-label='Instagram' class='text-gray-300'>📷</span>
+            <span aria-label='Facebook' class='text-gray-300'>📘</span>
+            <span aria-label='Twitter' class='text-gray-300'>🐦</span>
+          </div>
+        </div>
+      </div>
+      <hr class='border-gray-600 my-6 opacity-50'>
+      <div class='flex flex-col md:flex-row justify-between items-center'>
+        <p class='text-gray-400 text-sm'>© 2025 Brew & Beans. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    }
+  </script>
+</body>
+</html>
