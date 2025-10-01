@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Our Story - Brew & Beans</title>
+  <meta name='description' content='Learn the Brew & Beans story, our sourcing, and what makes our coffee special.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-[Open Sans]'>
+  <!-- Navigation -->
+  <header>
+    <nav class='bg-white shadow-lg sticky top-0 z-50'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div class='flex justify-between items-center h-16'>
+          <div class='flex-shrink-0'>
+            <a href='index.html' class='text-2xl font-bold text-[#3C2415]'>Brew & Beans</a>
+          </div>
+          <div class='hidden md:block'>
+            <div class='ml-10 flex items-baseline space-x-4'>
+              <a href='index.html' class='text-gray-700 hover:text-[#8B4513] transition-all duration-300'>Home</a>
+              <a href='about.html' class='text-gray-700 hover:text-[#8B4513] transition-all duration-300'>Our Story</a>
+              <a href='#menu' class='text-gray-700 hover:text-[#8B4513] transition-all duration-300'>Menu</a>
+              <a href='contact.html' class='text-gray-700 hover:text-[#8B4513] transition-all duration-300'>Contact</a>
+            </div>
+          </div>
+          <div class='md:hidden'>
+            <button id='mobile-menu-button' class='text-[#3C2415] hover:text-[#8B4513] focus:outline-none'>☰</button>
+          </div>
+        </div>
+      </div>
+      <div id='mobile-menu' class='hidden md:hidden'>
+        <a href='index.html' class='block px-4 py-2 text-sm text-[#3C2415] hover:bg-[#f3e6d9]'>Home</a>
+        <a href='about.html' class='block px-4 py-2 text-sm text-[#3C2415] hover:bg-[#f3e6d9]'>Our Story</a>
+        <a href='#menu' class='block px-4 py-2 text-sm text-[#3C2415] hover:bg-[#f3e6d9]'>Menu</a>
+        <a href='contact.html' class='block px-4 py-2 text-sm text-[#3C2415] hover:bg-[#f3e6d9]'>Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class='py-12'>
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h1 class='font-[Montserrat] text-3xl md:text-4xl text-[#3C2415] mb-4'>Our Story</h1>
+      <p class='text-gray-700 mb-6'>Brew & Beans began as a simple dream: to craft exceptional coffee in a space that feels like home. We partner with small-batch roasters and prioritize ethical sourcing, freshness, and community. Our baristas bring warmth, knowledge, and a love for standout flavors to every cup.</p>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <article class='bg-white rounded-lg p-6 shadow'>
+          <h3 class='font-[Montserrat] text-xl mb-2'>Meet the Team</h3>
+          <p class='text-gray-700'>Passionate baristas and roasters who obsess over grind size, extraction, and pour technique to deliver consistency and joy in every cup.</p>
+        </article>
+        <article class='bg-white rounded-lg p-6 shadow'>
+          <h3 class='font-[Montserrat] text-xl mb-2'>Sourcing & Roasting</h3>
+          <p class='text-gray-700'>We partner with ethical farms and roasters, selecting beans for balance, aroma, and nuance. Roasting is done in small batches to maximize freshness.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='bg-[#3C2415] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h3 class='text-2xl font-bold mb-2 text-[#D2B48C]'>Brew & Beans</h3>
+          <p class='text-gray-300'>A neighborhood coffee shop dedicated to exceptional coffee and community moments.</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-2'>Hours</h4>
+          <p class='text-gray-300'>Mon-Fri: 7:00 AM - 6:00 PM</p>
+          <p class='text-gray-300'>Sat: 8:00 AM - 4:00 PM</p>
+          <p class='text-gray-300'>Sun: 8:00 AM - 2:00 PM</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-2'>Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='index.html' class='text-gray-300 hover:text-[#D2B48C]'>Home</a></li>
+            <li><a href='about.html' class='text-gray-300 hover:text-[#D2B48C]'>Our Story</a></li>
+            <li><a href='contact.html' class='text-gray-300 hover:text-[#D2B48C]'>Contact</a></li>
+          </ul>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-2'>Social</h4>
+          <div class='flex space-x-3'>
+            <span aria-label='Instagram' class='text-gray-300'>📷</span>
+            <span aria-label='Facebook' class='text-gray-300'>📘</span>
+            <span aria-label='Twitter' class='text-gray-300'>🐦</span>
+          </div>
+        </div>
+      </div>
+      <hr class='border-gray-600 my-6 opacity-50'>
+      <div class='flex flex-col md:flex-row justify-between items-center'>
+        <p class='text-gray-400 text-sm'>© 2025 Brew & Beans. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    }
+  </script>
+</body>
+</html>
